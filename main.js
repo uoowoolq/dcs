@@ -1,7 +1,7 @@
 (function main() {
   window.alert('test');
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=Seattle&destinations=San+Francisco&key=AIzaSyCiE-hNfGC_P2DMMikklAFsFbPRFO5oHjA');
+  xhr.open('POST', 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=Seattle&destinations=San+Francisco&key=AIzaSyCiE-hNfGC_P2DMMikklAFsFbPRFO5oHjA');
   xhr.onreadystatechange = function() {
     switch ( xhr.readyState ) {
       case 0:
